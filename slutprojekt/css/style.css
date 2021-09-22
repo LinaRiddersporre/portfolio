@@ -5,47 +5,87 @@
     border: 0;
 }
 
-body{
-    height: 100%;
-}
+
 
 .wrapper{
     display: grid;
 
     grid-template-columns: auto;
-    grid-template-rows: 4rem 5rem auto 4rem;
+    grid-template-rows: 4rem 3rem auto 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
 }
 
 header{
+    
     grid-row: 1/2;
 
     background-color: aqua;
+
+    text-align: center;
+}
+
+h6{
+    text-align: right;
 }
 
 nav{
+    
     grid-row: 2/3;
 
     background-color: blue;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    flex: 0 0 20%;
+    list-style: none;
 }
 
 nav a{
-    text-decoration: none;
     
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 main{
+    
     grid-row: 3/4;
 
-    background-color: blueviolet;
+    background-color: blueviolet;    
+}
 
-    width: 100%;
+article a{
+    display: flex;
+    flex-direction: column;
+}
+
+article p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+img{
+    border-radius: 50%;
+    padding: 3rem 3rem 1rem;
 }
 
 footer{
+    
     grid-row: 4/5;
 
     background-color: chocolate;
+
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    align-items: center;
+    
 }
