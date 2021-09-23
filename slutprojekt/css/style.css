@@ -9,8 +9,10 @@
     min-height: 100vh;
     display: grid;
 
-    grid-template-columns: 2rem auto 2rem;
+    grid-template-columns: auto;
     grid-template-rows: 4rem 3rem auto 4rem;
+
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 a{
@@ -19,48 +21,44 @@ a{
 }
 
 header{
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     grid-row: 1/2;
 
-    background-color: aqua;
+    background-color: #787586;
 
     text-align: center;
-    
 }
 
 h6{
     text-align: right;
-    padding-right: 1rem;
+    margin: 1rem 1rem 0 0;
 }
 
 nav{
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     grid-row: 2/3;
 
-    background-color: blue;
+    background-color: #787586;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-nav li{
-    flex: 0 0 20%;
+    align-items: center; 
     list-style: none;
-
 }
 
 nav a{
-    
+    flex: 0 0 20%;
     font-weight: bold;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 main{
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     grid-row: 3/4;
 
-    background-color: blueviolet;    
+    background-color: #3d3d3d;  
+    color: antiquewhite;  
 }
 
 article a{
@@ -77,18 +75,47 @@ article p{
 img{
     border-radius: 50%;
     padding: 3rem 0 1rem;
+    object-fit: cover;
+    width: 12rem;
+    margin: auto;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project article h1{
+    font-style: oblique;
+    padding-bottom: .5rem;
+}
+.project img{
+    border-radius: 0%;
+    padding-top: 1rem;
+    
+    width: 20rem;
+}
+
+.project p{
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 .contact{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+    
 }
 
 .contact h4{
     padding: 1rem;
 }
 
-.contact p{
-    padding: .2rem;
+input, textarea{
+    border: black solid 1px;
 }
 
 .contact .knapp{
@@ -96,14 +123,16 @@ img{
 }
 
 footer{
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     grid-row: 4/5;
 
-    background-color: chocolate;
+    background-color: #ACA7CB;
 
     display: flex;
     justify-content: center;
     font-style: italic;
     align-items: center;
     
+    position: sticky;
+    bottom: 0;
 }
