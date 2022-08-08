@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+      </script>
     <title>Home</title>
 </head>
 <body>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"> <img src="/slutprojekt/img/nedladdning.png" alt="test"> Slide 01</li>
+                  <li class="splide__slide">Slide 02</li>
+                  <li class="splide__slide">Slide 03</li>
+              </ul>
+        </div>
+      </section>
+
+
     <div class="wrapper">
         <header>
             <h6>Lina Riddersporre</h6>
@@ -15,30 +34,30 @@
             
         </header>
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <main>
             <article class="front-page">
                 <a href="project-1.html">
-                    <img src="/img/mini-home-mini.png" alt="ett utklipp från min första hemsida">
+                    <img src="img/mini-home-mini.png" alt="ett utklipp från min första hemsida">
                 </a>
                 <p>Projekt Jag</p>
                 <a href="project-2.html">
-                    <img src="/img/bingolotto.jpg" alt="Fotografi på bingolotto loggan">
+                    <img src="img/bingolotto.jpg" alt="Fotografi på bingolotto loggan">
                 </a>
                 <p>Projekt Uppesittarkväll</p>
                 <a href="project-3.html">
-                    <img src="/img/resturang-start-mini.png" alt="Fotografi på pizzerian La dolce vita">
+                    <img src="img/resturang-start-mini.png" alt="Fotografi på pizzerian La dolce vita">
                 </a>
                 <p>Projekt Pizzeria</p>
                 <a href="#">
-                    <img src="/img/nedladdning.png" alt="">
+                    <img src="img/nedladdning.png" alt="">
                 </a>
                 <p>Lorem ipsum</p>
                 <a href="#">
-                    <img src="/img/nedladdning.png" alt="">
+                    <img src="img/nedladdning.png" alt="">
                 </a>
                 <p>Lorem ipsum</p>
             </article>
